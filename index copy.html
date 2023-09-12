@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card !t</title>
+    <style>
+      body {
+        background: #44f3e8;
+      }
+      .card {
+        position: relative;
+        text-align: center;
+        position: relative;
+        display: grid;
+        place-items: center;
+        background: #1f1e1f;
+        width: 300px;
+        padding: 20px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 1px 11px 20px 3px rgba(194, 193, 193, 1);
+      }
+      h1 {
+        color: #9901ff;
+        position: relative;
+        display: inline-block;
+      }
+      h1::after,
+      h1::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0; /* Para centralizar a animação na metade do texto */
+        border-radius: 3px;
+        width: 40%;
+        height: 3px; /* A altura da linha que você deseja */
+        background-color: #01db0c; /* A cor da linha */
+        transition: width 0.5s ease-in-out; /* Adicione uma transição suave */
+      }
+      h1:hover::after {
+        width: 100%; /* Largura completa quando o mouse está sobre o h1 */
+      }
+
+      h2 {
+        background: #bfbfbf6a;
+        color: #e4e4e4;
+        text-align: center;
+        font-size: 1.5em;
+        display: inline;
+        padding: 10px;
+        border-radius: 15px;
+        transition: 0.8s;
+      }
+
+      .card-text {
+        color: #1d1c1c;
+        background: #dbdbdb;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: justify;
+        font-weight: bolder;
+        font-size: 1.1em;
+        text-indent: 20px; /*distancia o paragrafo da esquerda para a direita 20px*/
+        letter-spacing: 2px; /*espaçamento entre cada letra*/
+        word-spacing: 5px; /*espaçamento entre cada palavra*/
+      }
+      /*.card-text::first-letter faz a primeira letra ficar grande e da cor vermelha*/
+      .card-text::first-letter {
+        font-size: 3em;
+        color: #f10f0f;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card" onclick="toggleText(this)">
+      
+      <h1>Titulo do Card:</h1>
+    
+      <h2>Clique No Card:</h2>
+      <p class="card-text" style="display: none">
+        A espiritualidade não os torna imunes aos desafios da vida, mas os
+        capacita a enfrentá-los com coragem e confiança. Esses homens reconhecem
+        que a vida é uma série de altos e baixos, mas sua fé lhes oferece a base
+        sólida de que precisam para superar adversidades e manter a esperança
+        mesmo nos momentos mais sombrios. Eles encontram força nas escrituras
+        sagradas, nas orações e na comunidade de pessoas que compartilham de sua
+        fé.
+      </p>
+    </div>
+    <script>
+      function toggleText(card) {
+        var cardText = card.querySelector(".card-text");
+        cardText.style.display =
+          cardText.style.display === "none" ? "block" : "none";
+      }
+    </script>
+  </body>
+</html>

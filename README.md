@@ -20,3 +20,11 @@
 ## Email: marcosdevcodes@gmail.com
 ## GitHub: https://github.com/marcosdevcodes
 ## Obrigado por usar este projeto! Esperamos que seja útil para você.
+
+## Como ficou o projeto:
+
+### Assista o video aqui embaixo.
+
+
+https://github.com/marcosdevcodes/Meu-projeto-Card-JS/assets/112284397/8f44ad57-7b02-4673-a9cc-020787b1e0ff
+
